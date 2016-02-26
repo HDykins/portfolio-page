@@ -87,7 +87,7 @@ body {
 }
 
 
-.left-section {
+.left-section, .right-section {
 	border-right: solid 1px rgb(100, 100, 100);
 	border-left: solid 1px rgb(100, 100, 100);
 	margin-top: 10px;
@@ -115,6 +115,7 @@ hr.line-break {
 
 hr.line-break:before {
     top: -4px;
+    left: 0;
     height: 1px;
 }
 hr.line-break:after {
@@ -152,6 +153,8 @@ svg {
 
 .text-line {
   font-size: 300px;
+  width: 300px;
+  height: 100px;
   }
 
 .text-copy {
@@ -188,4 +191,10 @@ $stroke-step: 4%;
     stroke-dashoffset: $stroke-step * $max;  
     stroke-dasharray: 0 $stroke-step * $max*2.5;
   }
+}
+
+
+.information-display {
+	background-color: $grey;
+	height: 560px;	
 }

@@ -19012,6 +19012,7 @@ var React = require('react');
 var Model = require('../Model.js');
 var Header = require('./Header.jsx');
 var SideNav = require('./SideNav.jsx');
+var InformationDisplay = require('./InformationDisplay.jsx');
 
 var Application = React.createClass({displayName: "Application",
   
@@ -19044,7 +19045,8 @@ var Application = React.createClass({displayName: "Application",
         React.createElement("hr", {className: "line-break"}), 
         React.createElement("div", {className: "container"}, 
           React.createElement("div", {className: "row"}, 
-            React.createElement(SideNav, null)
+            React.createElement(SideNav, null), 
+            React.createElement(InformationDisplay, null)
           )
         )
       )
@@ -19056,7 +19058,7 @@ var Application = React.createClass({displayName: "Application",
 module.exports = Application;
 
 
-},{"../Model.js":160,"./Header.jsx":162,"./SideNav.jsx":163,"react":159}],162:[function(require,module,exports){
+},{"../Model.js":160,"./Header.jsx":162,"./InformationDisplay.jsx":163,"./SideNav.jsx":164,"react":159}],162:[function(require,module,exports){
 var React = require('react');
 
 var Header = React.createClass({displayName: "Header",
@@ -19086,6 +19088,23 @@ module.exports = Header;
 },{"react":159}],163:[function(require,module,exports){
  var React = require('react');
 
+var InformationDisplay = React.createClass({displayName: "InformationDisplay",
+
+	render: function () {
+	  	return (
+	  		React.createElement("div", {className: "col-xs-8 right-section"}, 
+	  			React.createElement("div", {className: "information-display"}
+	  			)
+	  		)
+		);
+	}
+});
+
+module.exports = InformationDisplay;
+
+},{"react":159}],164:[function(require,module,exports){
+ var React = require('react');
+
 var SideNav = React.createClass({displayName: "SideNav",
 
 	render: function () {
@@ -19094,7 +19113,7 @@ var SideNav = React.createClass({displayName: "SideNav",
     		React.createElement("div", {className: "side-nav"}, 
     			React.createElement("div", {className: "section"}, 
     				React.createElement("svg", {viewBox: "0 0 800 600"}, 
-					  	React.createElement("symbol", {id: "s-text"}, 
+					  	React.createElement("symbol", {id: "about-svg-symbol"}, 
 							React.createElement("text", {
 							className: "text-line", 
 							textAnchor: "middle", 
@@ -19106,15 +19125,69 @@ var SideNav = React.createClass({displayName: "SideNav",
 					  	), 
 					  
 						React.createElement("g", {className: "g-ants"}, 
-							React.createElement("use", {xlinkHref: "#s-text", 
+							React.createElement("use", {xlinkHref: "#about-svg-symbol", 
 							  className: "text-copy"}), 
-							React.createElement("use", {xlinkHref: "#s-text", 
+							React.createElement("use", {xlinkHref: "#about-svg-symbol", 
 							  className: "text-copy"}), 
-							React.createElement("use", {xlinkHref: "#s-text", 
+							React.createElement("use", {xlinkHref: "#about-svg-symbol", 
 							  className: "text-copy"}), 
-							React.createElement("use", {xlinkHref: "#s-text", 
+							React.createElement("use", {xlinkHref: "#about-svg-symbol", 
 							  className: "text-copy"}), 
-							React.createElement("use", {xlinkHref: "#s-text", 
+							React.createElement("use", {xlinkHref: "#about-svg-symbol", 
+							  className: "text-copy"})
+						)
+					)
+    			), 
+    			React.createElement("div", {className: "section"}, 
+    				React.createElement("svg", {viewBox: "0 0 800 600"}, 
+					  	React.createElement("symbol", {id: "projects-svg-symbol"}, 
+							React.createElement("text", {
+							className: "text-line", 
+							textAnchor: "middle", 
+							x: "50%", 
+							y: "375px"}, 
+							"Projects"
+							)
+					    
+					  	), 
+					  
+						React.createElement("g", {className: "g-ants"}, 
+							React.createElement("use", {xlinkHref: "#projects-svg-symbol", 
+							  className: "text-copy"}), 
+							React.createElement("use", {xlinkHref: "#projects-svg-symbol", 
+							  className: "text-copy"}), 
+							React.createElement("use", {xlinkHref: "#projects-svg-symbol", 
+							  className: "text-copy"}), 
+							React.createElement("use", {xlinkHref: "#projects-svg-symbol", 
+							  className: "text-copy"}), 
+							React.createElement("use", {xlinkHref: "#projects-svg-symbol", 
+							  className: "text-copy"})
+						)
+					)
+    			), 
+    			React.createElement("div", {className: "section"}, 
+    				React.createElement("svg", {viewBox: "0 0 800 600"}, 
+					  	React.createElement("symbol", {id: "interests-svg-symbol"}, 
+							React.createElement("text", {
+							className: "text-line", 
+							textAnchor: "middle", 
+							x: "50%", 
+							y: "375px"}, 
+							"Interests"
+							)
+					    
+					  	), 
+					  
+						React.createElement("g", {className: "g-ants"}, 
+							React.createElement("use", {xlinkHref: "#interests-svg-symbol", 
+							  className: "text-copy"}), 
+							React.createElement("use", {xlinkHref: "#interests-svg-symbol", 
+							  className: "text-copy"}), 
+							React.createElement("use", {xlinkHref: "#interests-svg-symbol", 
+							  className: "text-copy"}), 
+							React.createElement("use", {xlinkHref: "#interests-svg-symbol", 
+							  className: "text-copy"}), 
+							React.createElement("use", {xlinkHref: "#interests-svg-symbol", 
 							  className: "text-copy"})
 						)
 					)

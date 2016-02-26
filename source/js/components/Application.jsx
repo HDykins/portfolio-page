@@ -2,6 +2,7 @@ var React = require('react');
 var Model = require('../Model.js');
 var Header = require('./Header.jsx');
 var SideNav = require('./SideNav.jsx');
+var InformationDisplay = require('./InformationDisplay.jsx');
 
 var Application = React.createClass({
   
@@ -35,6 +36,7 @@ var Application = React.createClass({
         <div className="container">
           <div className="row">
             <SideNav />
+            <InformationDisplay />
           </div>
         </div>
       </div>

@@ -85,7 +85,7 @@ body {
   100% {
     color: white; } }
 
-.left-section {
+.left-section, .right-section {
   border-right: solid 1px #646464;
   border-left: solid 1px #646464;
   margin-top: 10px; }
@@ -109,6 +109,7 @@ hr.line-break {
 
 hr.line-break:before {
   top: -4px;
+  left: 0;
   height: 1px; }
 
 hr.line-break:after {
@@ -136,7 +137,9 @@ svg {
   height: 100px; }
 
 .text-line {
-  font-size: 300px; }
+  font-size: 300px;
+  width: 300px;
+  height: 100px; }
 
 .text-copy {
   font-weight: 100;
@@ -172,3 +175,7 @@ svg {
   50% {
     stroke-dashoffset: 20%;
     stroke-dasharray: 0 50%; } }
+
+.information-display {
+  background-color: rgba(160, 160, 160, 0.1);
+  height: 560px; }
