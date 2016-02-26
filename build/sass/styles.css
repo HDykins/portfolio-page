@@ -1,0 +1,174 @@
+body {
+  background-color: #3c3c3c;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  /*	font-family: 'Dancing Script', cursive;*/
+  font-family: 'Italianno', cursive; }
+
+.header {
+  height: 70px;
+  background-color: rgba(160, 160, 160, 0.1);
+  border-bottom: solid 1px #646464; }
+
+.external-site-button, .external-site-button:hover, .external-site-button:visited, .external-site-button:link {
+  margin: 10px;
+  height: 40px;
+  width: 100px;
+  background-color: #3c3c3c;
+  /*	border: solid 1px yellow;*/
+  box-shadow: 5px 5px #f0c846, 10px 10px #3c3c3c;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 35px;
+  padding: 3px;
+  line-height: 0; }
+
+.external-site-button:hover {
+  box-shadow: 5px 5px #3c3c3c, 10px 10px #f0c846;
+  color: #f0c846;
+  -webkit-animation: color-change 1.5s infinite;
+  -moz-animation: color-change 1.5s infinite;
+  -o-animation: color-change 1.5s infinite;
+  -ms-animation: color-change 1.5s infinite;
+  animation: color-change 1.5s infinite;
+  -webkit-transition: all 0.5s infinite;
+  -moz-transition: all 0.5s infinite;
+  -ms-transition: all 0.5s infinite;
+  -o-transition: all 0.5s infinite;
+  transition: all 0.5s ease-out; }
+
+.external-site-button:visited, .external-site-button:link {
+  -webkit-transition: all 0.5s infinite;
+  -moz-transition: all 0.5s infinite;
+  -ms-transition: all 0.5s infinite;
+  -o-transition: all 0.5s infinite;
+  transition: all 0.5s ease-out; }
+
+@-webkit-keyframes color-change {
+  0% {
+    color: white; }
+  50% {
+    color: #f0c846; }
+  100% {
+    color: white; } }
+
+@-moz-keyframes color-change {
+  0% {
+    color: white; }
+  50% {
+    color: #f0c846; }
+  100% {
+    color: white; } }
+
+@-ms-keyframes color-change {
+  0% {
+    color: white; }
+  50% {
+    color: #f0c846; }
+  100% {
+    color: white; } }
+
+@-o-keyframes color-change {
+  0% {
+    color: white; }
+  50% {
+    color: #f0c846; }
+  100% {
+    color: white; } }
+
+@keyframes color-change {
+  0% {
+    color: white; }
+  50% {
+    color: #f0c846; }
+  100% {
+    color: white; } }
+
+.left-section {
+  border-right: solid 1px #646464;
+  border-left: solid 1px #646464;
+  margin-top: 10px; }
+
+.side-nav {
+  background-color: rgba(160, 160, 160, 0.1);
+  height: 560px; }
+
+.section {
+  width: 90%;
+  height: 120px;
+  margin: 0 5%;
+  padding: 10px; }
+
+hr.line-break {
+  border: 0;
+  height: 1px;
+  position: relative;
+  margin: 10px 0;
+  margin-top: 15px; }
+
+hr.line-break:before {
+  top: -4px;
+  height: 1px; }
+
+hr.line-break:after {
+  content: '';
+  height: 0.5em;
+  /* half the height of :before */
+  top: 1px;
+  /* height of hr*/ }
+
+hr.line-break:before, hr.line-break:after {
+  content: '';
+  position: absolute;
+  width: 100%; }
+
+hr.line-break, hr.line-break:before {
+  background: -moz-radial-gradient(center, ellipse cover, #d2d25a 0%, transparent 75%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 75%, color-stop(0%, #d2d25a), color-stop(75%, transparent));
+  background: -webkit-radial-gradient(center, ellipse cover, #d2d25a 0%, transparent 75%);
+  background: -o-radial-gradient(center, ellipse cover, #d2d25a 0%, transparent 75%);
+  background: -ms-radial-gradient(center, ellipse cover, #d2d25a 0%, transparent 75%);
+  background: radial-gradient(ellipse at center, #f0c846 50%, transparent 75%); }
+
+svg {
+  width: 200px;
+  height: 100px; }
+
+.text-line {
+  font-size: 300px; }
+
+.text-copy {
+  font-weight: 100;
+  fill: #f0c846;
+  text-shadow: 1px 1px 0 #3c3c3c;
+  width: 100px;
+  height: 20px; }
+
+.text-copy:hover {
+  font-weight: 100;
+  stroke: rgba(160, 160, 160, 0.1);
+  fill: none;
+  stroke-dasharray: 4% 16%;
+  stroke-width: 10px;
+  animation: stroke-offset 2s linear infinite; }
+  .text-copy:hover:nth-child(1) {
+    stroke: #f0c846;
+    stroke-dashoffset: 4%; }
+  .text-copy:hover:nth-child(2) {
+    stroke: yellow;
+    stroke-dashoffset: 8%; }
+  .text-copy:hover:nth-child(3) {
+    stroke: yellow;
+    stroke-dashoffset: 12%; }
+  .text-copy:hover:nth-child(4) {
+    stroke: yellow;
+    stroke-dashoffset: 16%; }
+  .text-copy:hover:nth-child(5) {
+    stroke: yellow;
+    stroke-dashoffset: 20%; }
+
+@keyframes stroke-offset {
+  50% {
+    stroke-dashoffset: 20%;
+    stroke-dasharray: 0 50%; } }
