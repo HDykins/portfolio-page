@@ -96,7 +96,7 @@ body {
 
 .section {
   width: 90%;
-  height: 120px;
+  height: 135px;
   margin: 0 5%;
   padding: 10px; }
 
@@ -109,7 +109,6 @@ hr.line-break {
 
 hr.line-break:before {
   top: -4px;
-  left: 0;
   height: 1px; }
 
 hr.line-break:after {
@@ -120,6 +119,7 @@ hr.line-break:after {
   /* height of hr*/ }
 
 hr.line-break:before, hr.line-break:after {
+  left: 0;
   content: '';
   position: absolute;
   width: 100%; }
@@ -133,8 +133,8 @@ hr.line-break, hr.line-break:before {
   background: radial-gradient(ellipse at center, #f0c846 50%, transparent 75%); }
 
 svg {
-  width: 200px;
-  height: 100px; }
+  width: 300px;
+  height: 115px; }
 
 .text-line {
   font-size: 300px;
@@ -153,7 +153,7 @@ svg {
   stroke: rgba(160, 160, 160, 0.1);
   fill: none;
   stroke-dasharray: 4% 16%;
-  stroke-width: 10px;
+  stroke-width: 15px;
   animation: stroke-offset 2s linear infinite; }
   .text-copy:hover:nth-child(1) {
     stroke: #f0c846;

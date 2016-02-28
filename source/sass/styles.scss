@@ -100,7 +100,7 @@ body {
 
 .section {
 	width: 90%;
-	height: 120px;
+	height: 135px;
 	margin: 0 5%;
 	padding: 10px;
 }
@@ -115,7 +115,6 @@ hr.line-break {
 
 hr.line-break:before {
     top: -4px;
-    left: 0;
     height: 1px;
 }
 hr.line-break:after {
@@ -125,6 +124,7 @@ hr.line-break:after {
 }
 
 hr.line-break:before, hr.line-break:after {
+	left: 0;
     content: '';
     position: absolute;
     width: 100%;
@@ -147,8 +147,8 @@ $colors: $gold, yellow, yellow, yellow, yellow;
 
 
 svg {
-	width: 200px;
-	height: 100px;
+	width: 300px;
+	height: 115px;
 }
 
 .text-line {
@@ -172,7 +172,7 @@ $stroke-step: 4%;
   stroke: $grey;
   fill: none;
   stroke-dasharray: $stroke-step $stroke-step * ($max - 1);
-  stroke-width: 10px;
+  stroke-width: 15px;
   
   animation: stroke-offset 2s linear infinite;
   

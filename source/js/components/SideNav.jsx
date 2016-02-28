@@ -87,6 +87,33 @@ var SideNav = React.createClass({
 						</g>
 					</svg>
     			</div>
+    			<div className="section">
+    				<svg viewBox="0 0 800 600">
+					  	<symbol id="something-svg-symbol">
+							<text
+							className="text-line"
+							textAnchor="middle"
+							x="50%"
+							y="375px">
+							Something
+							</text>
+					    
+					  	</symbol>
+					  
+						<g className="g-ants">
+							<use xlinkHref="#something-svg-symbol"
+							  className="text-copy"></use>     
+							<use xlinkHref="#something-svg-symbol"
+							  className="text-copy"></use>     
+							<use xlinkHref="#something-svg-symbol"
+							  className="text-copy"></use>     
+							<use xlinkHref="#something-svg-symbol"
+							  className="text-copy"></use>     
+							<use xlinkHref="#something-svg-symbol"
+							  className="text-copy"></use>     
+						</g>
+					</svg>
+    			</div>
     		</div>
     	</div>
 	  );

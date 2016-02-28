@@ -19063,16 +19063,24 @@ var React = require('react');
 
 var Header = React.createClass({displayName: "Header",
 
+	handleGithubButton: function () {
+		window.open('https://github.com/HDykins','_blank')
+	},
+
+	handleLinkedInButton: function () {
+		window.open('https://uk.linkedin.com/in/harry-dykins-4712b073','_blank')
+	},
+
 	render: function () {
 	  return (
 	    React.createElement("div", {className: "row header"}, 
 	    	React.createElement("div", {className: "col-xs-6"}, 
-	    		React.createElement("div", {className: "external-site-button"}, 
+	    		React.createElement("div", {onClick: this.handleGithubButton, className: "external-site-button"}, 
 	    			React.createElement("i", {className: "fa fa-github-square"})
 	    		)
 	    	), 
 	    	React.createElement("div", {className: "col-xs-6"}, 
-		    	React.createElement("div", {className: "external-site-button"}, 
+		    	React.createElement("div", {onClick: this.handleLinkedInButton, className: "external-site-button"}, 
 		    		React.createElement("i", {className: "fa fa-linkedin-square"})
 		    	)
 	    	)
@@ -19188,6 +19196,33 @@ var SideNav = React.createClass({displayName: "SideNav",
 							React.createElement("use", {xlinkHref: "#interests-svg-symbol", 
 							  className: "text-copy"}), 
 							React.createElement("use", {xlinkHref: "#interests-svg-symbol", 
+							  className: "text-copy"})
+						)
+					)
+    			), 
+    			React.createElement("div", {className: "section"}, 
+    				React.createElement("svg", {viewBox: "0 0 800 600"}, 
+					  	React.createElement("symbol", {id: "something-svg-symbol"}, 
+							React.createElement("text", {
+							className: "text-line", 
+							textAnchor: "middle", 
+							x: "50%", 
+							y: "375px"}, 
+							"Something"
+							)
+					    
+					  	), 
+					  
+						React.createElement("g", {className: "g-ants"}, 
+							React.createElement("use", {xlinkHref: "#something-svg-symbol", 
+							  className: "text-copy"}), 
+							React.createElement("use", {xlinkHref: "#something-svg-symbol", 
+							  className: "text-copy"}), 
+							React.createElement("use", {xlinkHref: "#something-svg-symbol", 
+							  className: "text-copy"}), 
+							React.createElement("use", {xlinkHref: "#something-svg-symbol", 
+							  className: "text-copy"}), 
+							React.createElement("use", {xlinkHref: "#something-svg-symbol", 
 							  className: "text-copy"})
 						)
 					)
