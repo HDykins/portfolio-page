@@ -3,6 +3,7 @@ var Model = require('../Model.js');
 var Header = require('./Header.jsx');
 var SideNav = require('./SideNav.jsx');
 var InformationDisplay = require('./InformationDisplay.jsx');
+var Footer = require('./Footer.jsx');
 
 var Application = React.createClass({
   
@@ -37,8 +38,12 @@ var Application = React.createClass({
           <div className="row">
             <SideNav />
             <InformationDisplay />
-          </div>
+          </div> 
         </div>
+        <hr className="line-break" />
+        <div className="row">
+          <Footer />
+        </div> 
       </div>
       );
     // }

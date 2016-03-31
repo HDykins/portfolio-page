@@ -1,9 +1,73 @@
+@media (max-width: 800px) {
+  svg {
+    height: 130px; }
+  .text-line {
+    font-size: 250px;
+    width: 300px;
+    height: 100px; }
+  .left-section {
+    width: 100%; }
+  .right-section {
+    width: 100%; }
+  .side-nav {
+    height: 450px; }
+  .section {
+    width: 90%;
+    height: 100px;
+    margin: 0 5%;
+    padding: 10px; } }
+
+@media (max-width: 992px) and (min-width: 800px) {
+  svg {
+    height: 115px; }
+  .text-line {
+    font-size: 250px;
+    width: 300px;
+    height: 100px; }
+  .side-nav {
+    height: 560px; }
+  .section {
+    width: 90%;
+    height: 135px;
+    margin: 0 5%;
+    padding: 10px; } }
+
+@media (max-width: 1999px) and (min-width: 993px) {
+  svg {
+    height: 115px; }
+  .text-line {
+    font-size: 250px;
+    width: 300px;
+    height: 100px; }
+  .side-nav {
+    height: 560px; }
+  .section {
+    width: 90%;
+    height: 135px;
+    margin: 0 5%;
+    padding: 10px; } }
+
+@media (min-width: 1200px) {
+  svg {
+    width: 300px;
+    height: 115px; }
+  .text-line {
+    font-size: 300px;
+    width: 300px;
+    height: 100px; }
+  .side-nav {
+    height: 560px; }
+  .section {
+    width: 90%;
+    height: 135px;
+    margin: 0 5%;
+    padding: 10px; } }
+
 body {
-  background-color: #3c3c3c;
+  background-color: #323232;
   color: white;
   text-align: center;
-  font-size: 20px;
-  /*	font-family: 'Dancing Script', cursive;*/
+  font-size: 25px;
   font-family: 'Italianno', cursive; }
 
 .header {
@@ -15,9 +79,9 @@ body {
   margin: 10px;
   height: 40px;
   width: 100px;
-  background-color: #3c3c3c;
+  background-color: #323232;
   /*	border: solid 1px yellow;*/
-  box-shadow: 5px 5px #f0c846, 10px 10px #3c3c3c;
+  box-shadow: 5px 5px #f0c846, 10px 10px #323232;
   margin: 10px auto;
   text-align: center;
   font-size: 35px;
@@ -25,7 +89,7 @@ body {
   line-height: 0; }
 
 .external-site-button:hover {
-  box-shadow: 5px 5px #3c3c3c, 10px 10px #f0c846;
+  box-shadow: 5px 5px #323232, 10px 10px #f0c846;
   color: #f0c846;
   -webkit-animation: color-change 1.5s infinite;
   -moz-animation: color-change 1.5s infinite;
@@ -91,32 +155,18 @@ body {
   margin-top: 10px; }
 
 .side-nav {
-  background-color: rgba(160, 160, 160, 0.1);
-  height: 560px; }
-
-.section {
-  width: 90%;
-  height: 135px;
-  margin: 0 5%;
-  padding: 10px; }
+  background-color: rgba(160, 160, 160, 0.1); }
 
 hr.line-break {
   border: 0;
   height: 1px;
   position: relative;
-  margin: 10px 0;
+  margin: 0;
   margin-top: 15px; }
 
 hr.line-break:before {
   top: -4px;
   height: 1px; }
-
-hr.line-break:after {
-  content: '';
-  height: 0.5em;
-  /* half the height of :before */
-  top: 1px;
-  /* height of hr*/ }
 
 hr.line-break:before, hr.line-break:after {
   left: 0;
@@ -132,19 +182,10 @@ hr.line-break, hr.line-break:before {
   background: -ms-radial-gradient(center, ellipse cover, #d2d25a 0%, transparent 75%);
   background: radial-gradient(ellipse at center, #f0c846 50%, transparent 75%); }
 
-svg {
-  width: 300px;
-  height: 115px; }
-
-.text-line {
-  font-size: 300px;
-  width: 300px;
-  height: 100px; }
-
 .text-copy {
   font-weight: 100;
   fill: #f0c846;
-  text-shadow: 1px 1px 0 #3c3c3c;
+  text-shadow: 1px 1px 0 #323232, 2px 2px 0 #282828;
   width: 100px;
   height: 20px; }
 
@@ -177,5 +218,15 @@ svg {
     stroke-dasharray: 0 50%; } }
 
 .information-display {
+  font-family: 'Sorts Mill Goudy', serif;
   background-color: rgba(160, 160, 160, 0.1);
-  height: 560px; }
+  height: 560px;
+  overflow: scroll;
+  padding: 20px;
+  font-style: italic; }
+
+.footer {
+  margin-top: 10px;
+  height: 54px;
+  background-color: rgba(160, 160, 160, 0.1);
+  border-top: solid 1px #646464; }

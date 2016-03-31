@@ -16,7 +16,6 @@ var SideNav = React.createClass({
 							y="375px">
 							About
 							</text>
-					    
 					  	</symbol>
 					  
 						<g className="g-ants">
@@ -43,7 +42,6 @@ var SideNav = React.createClass({
 							y="375px">
 							Projects
 							</text>
-					    
 					  	</symbol>
 					  
 						<g className="g-ants">
@@ -70,7 +68,6 @@ var SideNav = React.createClass({
 							y="375px">
 							Interests
 							</text>
-					    
 					  	</symbol>
 					  
 						<g className="g-ants">
@@ -89,27 +86,26 @@ var SideNav = React.createClass({
     			</div>
     			<div className="section">
     				<svg viewBox="0 0 800 600">
-					  	<symbol id="something-svg-symbol">
+					  	<symbol id="bonus-svg-symbol">
 							<text
 							className="text-line"
 							textAnchor="middle"
 							x="50%"
 							y="375px">
-							Something
+							Bonus
 							</text>
-					    
 					  	</symbol>
 					  
 						<g className="g-ants">
-							<use xlinkHref="#something-svg-symbol"
+							<use xlinkHref="#bonus-svg-symbol"
 							  className="text-copy"></use>     
-							<use xlinkHref="#something-svg-symbol"
+							<use xlinkHref="#bonus-svg-symbol"
 							  className="text-copy"></use>     
-							<use xlinkHref="#something-svg-symbol"
+							<use xlinkHref="#bonus-svg-symbol"
 							  className="text-copy"></use>     
-							<use xlinkHref="#something-svg-symbol"
+							<use xlinkHref="#bonus-svg-symbol"
 							  className="text-copy"></use>     
-							<use xlinkHref="#something-svg-symbol"
+							<use xlinkHref="#bonus-svg-symbol"
 							  className="text-copy"></use>     
 						</g>
 					</svg>
