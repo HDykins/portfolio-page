@@ -2,6 +2,22 @@
 
 var SideNav = React.createClass({
 
+	handleAboutClickEvent: function () {
+		this.props.updateState("ABOUT")
+	},
+
+	handleProjectsClickEvent: function () {
+		this.props.updateState("PROJECTS")
+	},
+
+	handleInterestsClickEvent: function () {
+		this.props.updateState("INTERESTS")
+	},
+
+	handleBonusClickEvent: function () {
+		this.props.updateState("BONUS")
+	},
+
 	render: function () {
 	  return (
     	<div className="col-xs-4 left-section">
@@ -18,7 +34,7 @@ var SideNav = React.createClass({
 							</text>
 					  	</symbol>
 					  
-						<g className="g-ants">
+						<g onClick={this.handleAboutClickEvent} className="g-ants">
 							<use xlinkHref="#about-svg-symbol"
 							  className="text-copy"></use>     
 							<use xlinkHref="#about-svg-symbol"
@@ -44,7 +60,7 @@ var SideNav = React.createClass({
 							</text>
 					  	</symbol>
 					  
-						<g className="g-ants">
+						<g onClick={this.handleProjectsClickEvent} className="g-ants">
 							<use xlinkHref="#projects-svg-symbol"
 							  className="text-copy"></use>     
 							<use xlinkHref="#projects-svg-symbol"
@@ -70,7 +86,7 @@ var SideNav = React.createClass({
 							</text>
 					  	</symbol>
 					  
-						<g className="g-ants">
+						<g onClick={this.handleInterestsClickEvent} className="g-ants">
 							<use xlinkHref="#interests-svg-symbol"
 							  className="text-copy"></use>     
 							<use xlinkHref="#interests-svg-symbol"
@@ -96,7 +112,7 @@ var SideNav = React.createClass({
 							</text>
 					  	</symbol>
 					  
-						<g className="g-ants">
+						<g onClick={this.handleBonusClickEvent} className="g-ants">
 							<use xlinkHref="#bonus-svg-symbol"
 							  className="text-copy"></use>     
 							<use xlinkHref="#bonus-svg-symbol"

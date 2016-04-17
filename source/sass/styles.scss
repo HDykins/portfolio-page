@@ -109,7 +109,7 @@ body {
 	background-color: $off-black;
 	color: white;
 	text-align: center;
-	font-size: 25px;
+	font-size: 27px;
 	font-family: 'Italianno', cursive;
 }
 
@@ -270,6 +270,7 @@ $stroke-step: 4%;
 	overflow: scroll;
 	padding: 20px;
 	font-style: italic;
+	text-shadow: black 1px 1px;
 }
 
 .footer {
@@ -277,4 +278,24 @@ $stroke-step: 4%;
 	height: 54px;
 	background-color: $grey;
 	border-top: solid 1px rgb(100, 100, 100);
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+  display: none;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+  display: none;
 }

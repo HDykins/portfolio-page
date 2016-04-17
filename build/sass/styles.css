@@ -67,7 +67,7 @@ body {
   background-color: #323232;
   color: white;
   text-align: center;
-  font-size: 25px;
+  font-size: 27px;
   font-family: 'Italianno', cursive; }
 
 .header {
@@ -223,10 +223,27 @@ hr.line-break, hr.line-break:before {
   height: 560px;
   overflow: scroll;
   padding: 20px;
-  font-style: italic; }
+  font-style: italic;
+  text-shadow: black 1px 1px; }
 
 .footer {
   margin-top: 10px;
   height: 54px;
   background-color: rgba(160, 160, 160, 0.1);
   border-top: solid 1px #646464; }
+
+.example-enter {
+  opacity: 0.01; }
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in; }
+
+.example-leave {
+  opacity: 1;
+  display: none; }
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+  display: none; }
