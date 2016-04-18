@@ -20151,7 +20151,7 @@ var Footer = React.createClass({displayName: "Footer",
 	render: function () {
 	  	return (
 	  		React.createElement("div", {className: "footer"}, 
-	  			"Hello"
+	  			"Interested in having a chat? Email me at hjdykins@hotmail.com or call 075-4228-4533"
 	  		)
 		);
 	}
@@ -20211,13 +20211,13 @@ var InformationDisplay = React.createClass({displayName: "InformationDisplay",
 		  		React.createElement("div", {className: "col-xs-8 right-section"}, 
 			  		React.createElement(ReactCSSTransitionGroup, {transitionName: "example", transitionEnterTimeout: 500, transitionLeaveTimeout: 300}, 
 			  			React.createElement("div", {className: "information-display", key: this.props.currentView}, 
-			  				React.createElement("p", null, "Hi, my name is Harry Dykins and i'm a junior front-end developer looking for work"), 
+			  				React.createElement("p", null, "Hi, my name is Harry Dykins and i'm a junior front-end developer looking for work in London"), 
 			  				React.createElement("hr", null), 
-			  				React.createElement("p", null, "I recently graduated from a 12-week intensive front-end coding course at The Iron Yard and have since had the experience of working on a contract as an intern at Lyst"), 
+			  				React.createElement("p", null, "I recently graduated from a 12-week intensive front-end coding course at ", React.createElement("a", {href: "https://www.theironyard.com/", target: "_blank", className: "links"}, "The Iron Yard"), " and have since had the experience of working on a contract as an intern at ", React.createElement("a", {href: "https://www.lyst.co.uk", target: "_blank", className: "links"}, "Lyst")), 
 			  				React.createElement("hr", null), 
 			  				React.createElement("p", null, "I graduated from the University of Birmingham with a Mechanical Engineering degree (2:1), and am pursuing a career in front-end development"), 
 			  				React.createElement("hr", null), 
-			  				React.createElement("p", null, "I am currently working to expand my portfolio and gain understanding of further developement skills")
+			  				React.createElement("p", null, "I am currently working to expand my portfolio and gain understanding of further development skills")
 		  				)
 		  			)
 		  		)
@@ -20227,7 +20227,30 @@ var InformationDisplay = React.createClass({displayName: "InformationDisplay",
 		  		React.createElement("div", {className: "col-xs-8 right-section"}, 
 			  		React.createElement(ReactCSSTransitionGroup, {transitionName: "example", transitionEnterTimeout: 500, transitionLeaveTimeout: 300}, 
 			  			React.createElement("div", {className: "information-display", key: this.props.currentView}, 
-							"Sabadoon"
+							React.createElement("h1", null, "A christmas tree ordering website ", React.createElement("a", {href: "http://hdykins.github.io/final-project/", target: "_blank"}, React.createElement("i", {className: "fa fa-github-square"}))), 
+							React.createElement("p", null, "A wesbite that allows users to order a christmas tree, its decorations and extra services. The user can also preview decorations, choose delivery method and date, and review their order"), 
+							React.createElement("p", null, "Tech: React.js, Flux, jQuery, Node.js, MongoDB, Bootstrap, Browserify, Gulp, Sass, moment.js, Google Maps and more APIs"), 
+							React.createElement("hr", null), 
+							React.createElement("h1", null, "A calendar/event planner ", React.createElement("a", {href: "http://hdykins.github.io/Calendar-jQuery-MVC/", target: "_blank"}, React.createElement("i", {className: "fa fa-github-square"}))), 
+							React.createElement("p", null, "A calendar that allows the user to plan for events and add location, and review events for that month. The user can add text mark the location of that event on a map by entering a postcode, and then filter events based on a date range"), 
+							React.createElement("p", null, "Tech: jQuery, MVC, Bootstrap, Sass, moment.js, Google Maps and more APIs"), 
+							React.createElement("hr", null), 
+							React.createElement("h1", null, "My old profile page ", React.createElement("a", {href: "http://hdykins.github.io/Profile-page/", target: "_blank"}, React.createElement("i", {className: "fa fa-github-square"}))), 
+							React.createElement("p", null, "A profile page I created in the early weeks of my course. In making this I learned a lot about styling and media queries"), 
+							React.createElement("p", null, "Tech: HTML, Javascript, Bootstrap and CSS"), 
+							React.createElement("hr", null), 
+							React.createElement("h1", null, "A photo viewer ", React.createElement("a", {href: "http://hdykins.github.io/Misc-code/", target: "_blank"}, React.createElement("i", {className: "fa fa-github-square"}))), 
+							React.createElement("p", null, "A simple photo viewer I created in the early weeks of my course. My first application created using Javascript."), 
+							React.createElement("p", null, "Tech: HTML, Javascript and CSS"), 
+							React.createElement("hr", null), 
+							React.createElement("h1", null, "A metro newspaper page ", React.createElement("a", {href: "http://hdykins.github.io/Bootstrap-Metro-page/", target: "_blank"}, React.createElement("i", {className: "fa fa-github-square"}))), 
+							React.createElement("p", null, "A static newspaper page recreated using HTML, CSS and Bootstrap. Collaborated with another student to share the workload, first introduction to HTML, CSS, Bootstrap and Git and creating a responsive page"), 
+							React.createElement("p", null, "Tech: HTML, Bootstrap and CSS"), 
+							React.createElement("hr", null), 
+							React.createElement("h1", null, "Currently working on - MapBox drone tracking visual representation"), 
+							React.createElement("p", null, "A An application that show the path of a series of drones based on their co-ordinates and timestamp. More to come."), 
+							React.createElement("p", null, "Tech: Mapbox, jQuery, more TBD"), 
+							React.createElement("hr", null)
 			  			)
 			  		)
 		  		)
@@ -20237,7 +20260,28 @@ var InformationDisplay = React.createClass({displayName: "InformationDisplay",
 		  		React.createElement("div", {className: "col-xs-8 right-section"}, 
 			  		React.createElement(ReactCSSTransitionGroup, {transitionName: "example", transitionEnterTimeout: 500, transitionLeaveTimeout: 300}, 
 			  			React.createElement("div", {className: "information-display", key: this.props.currentView}, 
-							"Sabadoon Sabadoon"
+			  				React.createElement("div", {className: "row"}, 
+				  				React.createElement("div", {className: "col-xs-3"}, 
+				  					React.createElement("span", null, React.createElement("i", {className: "fa fa-3x fa-gamepad"}))
+				  				), 
+				  				React.createElement("div", {className: "col-xs-9"}, 
+									React.createElement("h1", null, "Gaming"), 
+									React.createElement("p", null, "gjdhg keajgjgj gij fds rhk d dd reagegij aeg ragl fsvf ff fsfffrsf fsfs s s dfsd sff afad afda afadafa af afsffd afda affsafa afsdfa afdsfafd"), 
+									React.createElement("p", null, "Tech: Mapbox, jQuery, more TBD")
+								)
+							), 
+							React.createElement("hr", null), 
+							React.createElement("div", {className: "row"}, 
+								React.createElement("div", {className: "col-xs-3"}, 
+									React.createElement("i", {className: "fa fa-3x fa-futbol-o"})
+								), 
+								React.createElement("div", {className: "col-xs-9"}, 
+									React.createElement("h1", null, "Sport"), 
+									React.createElement("p", null), 
+									React.createElement("p", null, "Tech: Mapbox, jQuery, more TBD")
+								)
+							), 
+							React.createElement("hr", null)
 			  			)
 			  		)
 		  		)

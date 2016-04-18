@@ -15,7 +15,9 @@
     width: 90%;
     height: 100px;
     margin: 0 5%;
-    padding: 10px; } }
+    padding: 10px; }
+  .fa-3x {
+    font-size: 2em; } }
 
 @media (max-width: 992px) and (min-width: 800px) {
   svg {
@@ -69,6 +71,12 @@ body {
   text-align: center;
   font-size: 27px;
   font-family: 'Italianno', cursive; }
+
+h1 {
+  color: #f0c846; }
+
+i {
+  color: white; }
 
 .header {
   height: 70px;
@@ -228,9 +236,13 @@ hr.line-break, hr.line-break:before {
 
 .footer {
   margin-top: 10px;
-  height: 54px;
   background-color: rgba(160, 160, 160, 0.1);
-  border-top: solid 1px #646464; }
+  border-top: solid 1px #646464;
+  font-family: 'Sorts Mill Goudy', serif;
+  font-style: italic;
+  padding: 10px;
+  font-size: 24px;
+  text-shadow: black 1px 1px; }
 
 .example-enter {
   opacity: 0.01; }
@@ -247,3 +259,16 @@ hr.line-break, hr.line-break:before {
   opacity: 0.01;
   transition: opacity 300ms ease-in;
   display: none; }
+
+.links {
+  color: #f0c846; }
+
+.links:hover {
+  -webkit-animation: color-change 1.5s infinite;
+  -moz-animation: color-change 1.5s infinite;
+  -o-animation: color-change 1.5s infinite;
+  -ms-animation: color-change 1.5s infinite;
+  animation: color-change 1.5s infinite; }
+
+.links:visited {
+  color: #f0c846; }

@@ -33,6 +33,9 @@ $gold: rgb(240,200,70);
 		margin: 0 5%;
 		padding: 10px;
 	}
+	.fa-3x {
+		font-size: 2em;
+	}
 }
 
 @media (max-width: 992px) and (min-width: 800px) {
@@ -111,6 +114,14 @@ body {
 	text-align: center;
 	font-size: 27px;
 	font-family: 'Italianno', cursive;
+}
+
+h1 {
+	color: $gold;
+}
+
+i {
+	color: white;
 }
 
 .header {
@@ -275,9 +286,13 @@ $stroke-step: 4%;
 
 .footer {
 	margin-top: 10px;
-	height: 54px;
 	background-color: $grey;
 	border-top: solid 1px rgb(100, 100, 100);
+	font-family: 'Sorts Mill Goudy', serif;
+	font-style: italic;
+	padding: 10px;
+	font-size: 24px;
+	text-shadow: black 1px 1px;
 }
 
 .example-enter {
@@ -298,4 +313,20 @@ $stroke-step: 4%;
   opacity: 0.01;
   transition: opacity 300ms ease-in;
   display: none;
+}
+
+.links {
+	color: $gold;
+}
+
+.links:hover {
+	-webkit-animation: color-change 1.5s infinite;
+	-moz-animation: color-change 1.5s infinite;
+	-o-animation: color-change 1.5s infinite;
+	-ms-animation: color-change 1.5s infinite;
+	animation: color-change 1.5s infinite;
+}
+
+.links:visited {
+	color: $gold;
 }
