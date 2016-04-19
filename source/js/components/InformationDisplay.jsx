@@ -85,7 +85,7 @@ var InformationDisplay = React.createClass({
 							<h1>This is my face</h1>
 							<img style={{width: 50 + "%"}} src="./build/images/myface.jpg" />
 							<hr />
-							<iframe style={{width: 100 + "%"}} src="https://www.youtube.com/watch?v=2GtwpEYkDQg"></iframe>
+							<iframe style={{width: 100 + "%"}} src="https://www.youtube.com/embed/2GtwpEYkDQg" frameborder="0" allowfullscreen></iframe>
 			  			</div>
 			  		</ReactCSSTransitionGroup>
 		  		</div>

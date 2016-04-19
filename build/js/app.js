@@ -20282,7 +20282,7 @@ var InformationDisplay = React.createClass({displayName: "InformationDisplay",
 							React.createElement("h1", null, "This is my face"), 
 							React.createElement("img", {style: {width: 50 + "%"}, src: "./build/images/myface.jpg"}), 
 							React.createElement("hr", null), 
-							React.createElement("iframe", {style: {width: 100 + "%"}, src: "https://www.youtube.com/watch?v=2GtwpEYkDQg"})
+							React.createElement("iframe", {style: {width: 100 + "%"}, src: "https://www.youtube.com/embed/2GtwpEYkDQg", frameborder: "0", allowfullscreen: true})
 			  			)
 			  		)
 		  		)
