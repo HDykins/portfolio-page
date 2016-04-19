@@ -20260,27 +20260,15 @@ var InformationDisplay = React.createClass({displayName: "InformationDisplay",
 		  		React.createElement("div", {className: "col-xs-8 right-section"}, 
 			  		React.createElement(ReactCSSTransitionGroup, {transitionName: "example", transitionEnterTimeout: 500, transitionLeaveTimeout: 300}, 
 			  			React.createElement("div", {className: "information-display", key: this.props.currentView}, 
-			  				React.createElement("div", {className: "row"}, 
-				  				React.createElement("div", {className: "col-xs-3"}, 
-				  					React.createElement("span", null, React.createElement("i", {className: "fa fa-3x fa-gamepad"}))
-				  				), 
-				  				React.createElement("div", {className: "col-xs-9"}, 
-									React.createElement("h1", null, "Gaming"), 
-									React.createElement("p", null, "gjdhg keajgjgj gij fds rhk d dd reagegij aeg ragl fsvf ff fsfffrsf fsfs s s dfsd sff afad afda afadafa af afsffd afda affsafa afsdfa afdsfafd"), 
-									React.createElement("p", null, "Tech: Mapbox, jQuery, more TBD")
-								)
-							), 
+		  					React.createElement("i", {className: "fa interests-icon fa-gamepad"}), 
+							React.createElement("h1", null, "Gaming"), 
+							React.createElement("p", null, "I enjoy playing games in my free time, mostly PC but also console games. I enjoy pretty much all types, but especially FPS and RPG games and play CS:GO fairly regularly and dedicatedly. At the moment i'm currently sinking hours into Fallout 4 and HL2 mod called Synergy (pretty much HL2 story co-op)"), 
+							React.createElement("p", null, "SteamID: jedikins PS Tag: Goose-god"), 	
 							React.createElement("hr", null), 
-							React.createElement("div", {className: "row"}, 
-								React.createElement("div", {className: "col-xs-3"}, 
-									React.createElement("i", {className: "fa fa-3x fa-futbol-o"})
-								), 
-								React.createElement("div", {className: "col-xs-9"}, 
-									React.createElement("h1", null, "Sport"), 
-									React.createElement("p", null), 
-									React.createElement("p", null, "Tech: Mapbox, jQuery, more TBD")
-								)
-							), 
+							React.createElement("i", {className: "fa interests-icon fa-futbol-o"}), 
+							React.createElement("h1", null, "Sport"), 
+							React.createElement("p", null, "As with games, I like watching almost all sports, particularly football, rugby and formula 1. I also play tennis in my spare time casually, and enjoy watching eSports. I appreciate the competetive nature and skill involved in sport which I think is mirrored in professional gaming teams"), 
+							React.createElement("p", null, "Fav teams: Spurs, Virtus.pro"), 	
 							React.createElement("hr", null)
 			  			)
 			  		)
@@ -20291,7 +20279,10 @@ var InformationDisplay = React.createClass({displayName: "InformationDisplay",
 		  		React.createElement("div", {className: "col-xs-8 right-section"}, 
 			  		React.createElement(ReactCSSTransitionGroup, {transitionName: "example", transitionEnterTimeout: 500, transitionLeaveTimeout: 300}, 
 			  			React.createElement("div", {className: "information-display", key: this.props.currentView}, 
-							"Sabadoon Sabadoon Sabadoon"
+							React.createElement("h1", null, "This is my face"), 
+							React.createElement("img", {style: {width: 50 + "%"}, src: "./build/images/myface.jpg"}), 
+							React.createElement("hr", null), 
+							React.createElement("iframe", {style: {width: 100 + "%"}, src: "https://www.youtube.com/watch?v=2GtwpEYkDQg"})
 			  			)
 			  		)
 		  		)

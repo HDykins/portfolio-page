@@ -63,27 +63,15 @@ var InformationDisplay = React.createClass({
 		  		<div className="col-xs-8 right-section">
 			  		<ReactCSSTransitionGroup transitionName="example" transitionEnterTimeout={500} transitionLeaveTimeout={300}>
 			  			<div className="information-display" key={this.props.currentView}>
-			  				<div className="row">
-				  				<div className="col-xs-3">
-				  					<span><i className="fa fa-3x fa-gamepad"></i></span>
-				  				</div>
-				  				<div className="col-xs-9">
-									<h1>Gaming</h1>
-									<p>gjdhg keajgjgj gij fds rhk d dd reagegij aeg ragl fsvf ff fsfffrsf fsfs s s dfsd sff afad afda afadafa af afsffd afda affsafa afsdfa afdsfafd</p>
-									<p>Tech: Mapbox, jQuery, more TBD</p>
-								</div>
-							</div>
+		  					<i className="fa interests-icon fa-gamepad"></i>
+							<h1>Gaming</h1>
+							<p>I enjoy playing games in my free time, mostly PC but also console games. I enjoy pretty much all types, but especially FPS and RPG games and play CS:GO fairly regularly and dedicatedly. At the moment i'm currently sinking hours into Fallout 4 and HL2 mod called Synergy (pretty much HL2 story co-op)</p>
+							<p>SteamID: jedikins PS Tag: Goose-god</p>	
 							<hr />
-							<div className="row">
-								<div className="col-xs-3">
-									<i className="fa fa-3x fa-futbol-o"></i>
-								</div>
-								<div className="col-xs-9">
-									<h1>Sport</h1>
-									<p></p>
-									<p>Tech: Mapbox, jQuery, more TBD</p>
-								</div>
-							</div>
+							<i className="fa interests-icon fa-futbol-o"></i>
+							<h1>Sport</h1>
+							<p>As with games, I like watching almost all sports, particularly football, rugby and formula 1. I also play tennis in my spare time casually, and enjoy watching eSports. I appreciate the competetive nature and skill involved in sport which I think is mirrored in professional gaming teams</p>
+							<p>Fav teams: Spurs, Virtus.pro</p>	
 							<hr />
 			  			</div>
 			  		</ReactCSSTransitionGroup>
@@ -94,7 +82,10 @@ var InformationDisplay = React.createClass({
 		  		<div className="col-xs-8 right-section">
 			  		<ReactCSSTransitionGroup transitionName="example" transitionEnterTimeout={500} transitionLeaveTimeout={300}>
 			  			<div className="information-display" key={this.props.currentView}>
-							Sabadoon Sabadoon Sabadoon
+							<h1>This is my face</h1>
+							<img style={{width: 50 + "%"}} src="./build/images/myface.jpg" />
+							<hr />
+							<iframe style={{width: 100 + "%"}} src="https://www.youtube.com/watch?v=2GtwpEYkDQg"></iframe>
 			  			</div>
 			  		</ReactCSSTransitionGroup>
 		  		</div>
