@@ -202,7 +202,8 @@ hr.line-break, hr.line-break:before {
   fill: none;
   stroke-dasharray: 4% 16%;
   stroke-width: 15px;
-  animation: stroke-offset 2s linear infinite; }
+  animation: stroke-offset 2s linear infinite;
+  -moz-animation: stroke-offset 2s linear infinite; }
   .text-copy:hover:nth-child(1) {
     stroke: #f0c846;
     stroke-dashoffset: 4%; }
@@ -220,6 +221,21 @@ hr.line-break, hr.line-break:before {
     stroke-dashoffset: 20%; }
 
 @keyframes stroke-offset {
+  50% {
+    stroke-dashoffset: 20%;
+    stroke-dasharray: 0 50%; } }
+
+@-moz-keyframes stroke-offset {
+  50% {
+    stroke-dashoffset: 20%;
+    stroke-dasharray: 0 50%; } }
+
+@-ms-keyframes stroke-offset {
+  50% {
+    stroke-dashoffset: 20%;
+    stroke-dasharray: 0 50%; } }
+
+@-webkit-keyframes stroke-offset {
   50% {
     stroke-dashoffset: 20%;
     stroke-dasharray: 0 50%; } }

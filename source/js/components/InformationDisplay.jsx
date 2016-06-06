@@ -38,6 +38,11 @@ var InformationDisplay = React.createClass({
 							<p>A calendar that allows the user to plan for events and add location, and review events for that month. The user can add text mark the location of that event on a map by entering a postcode, and then filter events based on a date range</p>
 							<p>Tech: jQuery, MVC, Bootstrap, Sass, moment.js, Google Maps and more APIs</p>
 							<hr />
+							<h1>Adidas landing page <a href="http://hdykins.github.io/adidas-landing-page/" target="_blank"><i className="fa fa-github-square"></i></a></h1>
+							<h1>Adidas wanderlust form <a href="http://hdykins.github.io/adidas-wanderlust-form/" target="_blank"><i className="fa fa-github-square"></i></a></h1>
+							<p>A simple landing page I created in a short period of time for the application for a job at a company that wanted to test my design skills. The page attempts to imitate the adidas brand and comes with a sister wanderlust competition form</p>
+							<p>Tech: HTML, Bootstrap and CSS</p>
+							<hr />
 							<h1>My old profile page <a href="http://hdykins.github.io/Profile-page/" target="_blank"><i className="fa fa-github-square"></i></a></h1>
 							<p>A profile page I created in the early weeks of my course. In making this I learned a lot about styling and media queries</p>
 							<p>Tech: HTML, Javascript, Bootstrap and CSS</p>

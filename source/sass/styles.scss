@@ -254,6 +254,7 @@ $stroke-step: 4%;
 	stroke-width: 15px;
   
 	animation: stroke-offset 2s linear infinite;
+	-moz-animation: stroke-offset 2s linear infinite;
   
 	@for $item from 1 through $max {
     $stroke-color: nth($colors, $item);
@@ -266,6 +267,27 @@ $stroke-step: 4%;
 }
 
 @keyframes stroke-offset {
+	50% {
+		stroke-dashoffset: $stroke-step * $max;  
+		stroke-dasharray: 0 $stroke-step * $max*2.5;
+	}
+}
+
+@-moz-keyframes stroke-offset {
+	50% {
+		stroke-dashoffset: $stroke-step * $max;  
+		stroke-dasharray: 0 $stroke-step * $max*2.5;
+	}
+}
+
+@-ms-keyframes stroke-offset {
+	50% {
+		stroke-dashoffset: $stroke-step * $max;  
+		stroke-dasharray: 0 $stroke-step * $max*2.5;
+	}
+}
+
+@-webkit-keyframes stroke-offset {
 	50% {
 		stroke-dashoffset: $stroke-step * $max;  
 		stroke-dasharray: 0 $stroke-step * $max*2.5;
