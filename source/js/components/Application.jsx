@@ -9,14 +9,14 @@ var Application = React.createClass({
   
   getInitialState: function () {
     return {
-      currentView: 'SPLASH'
+      currentView: 'ABOUT'
     };
   },
 
-  updateState: function () {
+  updateState: function (view) {
     this.setState(
     {
-      currentView: Model.getCurrentView()
+      currentView: view
     });
   },
 
@@ -36,8 +36,8 @@ var Application = React.createClass({
         <hr className="line-break" />
         <div className="container">
           <div className="row">
-            <SideNav />
-            <InformationDisplay />
+            <SideNav updateState={this.updateState} />
+            <InformationDisplay currentView={this.state.currentView} />
           </div> 
         </div>
         <hr className="line-break" />

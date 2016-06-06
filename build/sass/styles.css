@@ -38,7 +38,7 @@
   .text-line {
     font-size: 250px;
     width: 300px;
-    height: 100px; }
+    height: 120px; }
   .side-nav {
     height: 560px; }
   .section {
@@ -50,9 +50,9 @@
 @media (min-width: 1200px) {
   svg {
     width: 300px;
-    height: 115px; }
+    height: 120px; }
   .text-line {
-    font-size: 300px;
+    font-size: 250px;
     width: 300px;
     height: 100px; }
   .side-nav {
@@ -67,8 +67,15 @@ body {
   background-color: #323232;
   color: white;
   text-align: center;
-  font-size: 25px;
-  font-family: 'Italianno', cursive; }
+  font-size: 27px;
+  font-family: 'Sorts Mill Goudy', serif;
+  font-style: italic; }
+
+h1 {
+  color: #f0c846; }
+
+i {
+  color: white; }
 
 .header {
   height: 70px;
@@ -195,7 +202,8 @@ hr.line-break, hr.line-break:before {
   fill: none;
   stroke-dasharray: 4% 16%;
   stroke-width: 15px;
-  animation: stroke-offset 2s linear infinite; }
+  animation: stroke-offset 2s linear infinite;
+  -moz-animation: stroke-offset 2s linear infinite; }
   .text-copy:hover:nth-child(1) {
     stroke: #f0c846;
     stroke-dashoffset: 4%; }
@@ -217,16 +225,64 @@ hr.line-break, hr.line-break:before {
     stroke-dashoffset: 20%;
     stroke-dasharray: 0 50%; } }
 
+@-moz-keyframes stroke-offset {
+  50% {
+    stroke-dashoffset: 20%;
+    stroke-dasharray: 0 50%; } }
+
+@-ms-keyframes stroke-offset {
+  50% {
+    stroke-dashoffset: 20%;
+    stroke-dasharray: 0 50%; } }
+
+@-webkit-keyframes stroke-offset {
+  50% {
+    stroke-dashoffset: 20%;
+    stroke-dasharray: 0 50%; } }
+
 .information-display {
-  font-family: 'Sorts Mill Goudy', serif;
   background-color: rgba(160, 160, 160, 0.1);
   height: 560px;
   overflow: scroll;
   padding: 20px;
-  font-style: italic; }
+  text-shadow: black 1px 1px; }
 
 .footer {
   margin-top: 10px;
-  height: 54px;
   background-color: rgba(160, 160, 160, 0.1);
-  border-top: solid 1px #646464; }
+  border-top: solid 1px #646464;
+  padding: 10px;
+  font-size: 24px;
+  text-shadow: black 1px 1px; }
+
+.example-enter {
+  opacity: 0.01; }
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in; }
+
+.example-leave {
+  opacity: 1;
+  display: none; }
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+  display: none; }
+
+.links {
+  color: #f0c846; }
+
+.links:hover {
+  -webkit-animation: color-change 1.5s infinite;
+  -moz-animation: color-change 1.5s infinite;
+  -o-animation: color-change 1.5s infinite;
+  -ms-animation: color-change 1.5s infinite;
+  animation: color-change 1.5s infinite; }
+
+.links:visited {
+  color: #f0c846; }
+
+.interests-icon {
+  font-size: 64px; }

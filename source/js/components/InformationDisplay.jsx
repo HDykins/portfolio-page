@@ -1,31 +1,103 @@
  var React = require('react');
+ var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
 
 var InformationDisplay = React.createClass({
 
+	componentDidMount() {
+		console.log("mounted");
+	},
+
 	render: function () {
-	  	return (
-	  		<div className="col-xs-8 right-section">
-	  			<div className="information-display">
-	  				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
-Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-
-"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-
-1914 translation by H. Rackham
-
-"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
-
-Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-
-"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
-
-1914 translation by H. Rackham
-
-"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
-	  			</div>
-	  		</div>
-		);
+		{console.log(this.props.currentView)}
+		if (this.props.currentView==="ABOUT") {
+		  	return (
+		  		<div className="col-xs-8 right-section">
+			  		<ReactCSSTransitionGroup transitionName="example" transitionEnterTimeout={500} transitionLeaveTimeout={300}>
+			  			<div className="information-display" key={this.props.currentView}>
+			  				<p>Hi, my name is Harry Dykins and i'm a junior front-end developer looking for work in London</p>
+			  				<hr />
+			  				<p>I recently graduated from a 12-week intensive front-end coding course at <a href="https://www.theironyard.com/" target="_blank" className="links">The Iron Yard</a> and have since had the experience of working on a contract as an intern at <a href="https://www.lyst.co.uk" target="_blank" className="links">Lyst</a></p>
+			  				<hr />
+			  				<p>I graduated from the University of Birmingham with a Mechanical Engineering degree (2:1), and am pursuing a career in front-end development</p>
+			  				<hr />
+			  				<p>I am currently working to expand my portfolio and gain understanding of further development skills</p>
+		  				</div>
+		  			</ReactCSSTransitionGroup>
+		  		</div>
+			);
+ 		} else if (this.props.currentView==="PROJECTS") {
+		  	return (
+		  		<div className="col-xs-8 right-section">
+			  		<ReactCSSTransitionGroup transitionName="example" transitionEnterTimeout={500} transitionLeaveTimeout={300}>
+			  			<div className="information-display" key={this.props.currentView}>
+							<h1>A christmas tree ordering website <a href="http://hdykins.github.io/final-project/" target="_blank"><i className="fa fa-github-square"></i></a></h1>
+							<p>A wesbite that allows users to order a christmas tree, its decorations and extra services. The user can also preview decorations, choose delivery method and date, and review their order</p>
+							<p>Tech: React.js, Flux, jQuery, Node.js, MongoDB, Bootstrap, Browserify, Gulp, Sass, moment.js, Google Maps and more APIs</p>
+							<hr />
+							<h1>A calendar/event planner <a href="http://hdykins.github.io/Calendar-jQuery-MVC/" target="_blank"><i className="fa fa-github-square"></i></a></h1>
+							<p>A calendar that allows the user to plan for events and add location, and review events for that month. The user can add text mark the location of that event on a map by entering a postcode, and then filter events based on a date range</p>
+							<p>Tech: jQuery, MVC, Bootstrap, Sass, moment.js, Google Maps and more APIs</p>
+							<hr />
+							<h1>Adidas landing page <a href="http://hdykins.github.io/adidas-landing-page/" target="_blank"><i className="fa fa-github-square"></i></a></h1>
+							<h1>Adidas wanderlust form <a href="http://hdykins.github.io/adidas-wanderlust-form/" target="_blank"><i className="fa fa-github-square"></i></a></h1>
+							<p>A simple landing page I created in a short period of time for the application for a job at a company that wanted to test my design skills. The page attempts to imitate the adidas brand and comes with a sister wanderlust competition form</p>
+							<p>Tech: HTML, Bootstrap and CSS</p>
+							<hr />
+							<h1>My old profile page <a href="http://hdykins.github.io/Profile-page/" target="_blank"><i className="fa fa-github-square"></i></a></h1>
+							<p>A profile page I created in the early weeks of my course. In making this I learned a lot about styling and media queries</p>
+							<p>Tech: HTML, Javascript, Bootstrap and CSS</p>
+							<hr />
+							<h1>A photo viewer <a href="http://hdykins.github.io/Misc-code/" target="_blank"><i className="fa fa-github-square"></i></a></h1>
+							<p>A simple photo viewer I created in the early weeks of my course. My first application created using Javascript.</p>
+							<p>Tech: HTML, Javascript and CSS</p>
+							<hr />
+							<h1>A metro newspaper page <a href="http://hdykins.github.io/Bootstrap-Metro-page/" target="_blank"><i className="fa fa-github-square"></i></a></h1>
+							<p>A static newspaper page recreated using HTML, CSS and Bootstrap. Collaborated with another student to share the workload, first introduction to HTML, CSS, Bootstrap and Git and creating a responsive page</p>
+							<p>Tech: HTML, Bootstrap and CSS</p>
+							<hr />
+							<h1>Currently working on - MapBox drone tracking visual representation</h1>
+							<p>A An application that show the path of a series of drones based on their co-ordinates and timestamp. More to come.</p>
+							<p>Tech: Mapbox, jQuery, more TBD</p>
+							<hr />
+			  			</div>
+			  		</ReactCSSTransitionGroup>
+		  		</div>
+			);
+ 		} else if (this.props.currentView==="INTERESTS") {
+		  	return (
+		  		<div className="col-xs-8 right-section">
+			  		<ReactCSSTransitionGroup transitionName="example" transitionEnterTimeout={500} transitionLeaveTimeout={300}>
+			  			<div className="information-display" key={this.props.currentView}>
+		  					<i className="fa interests-icon fa-gamepad"></i>
+							<h1>Gaming</h1>
+							<p>I enjoy playing games in my free time, mostly PC but also console games. I enjoy pretty much all types, but especially FPS and RPG games and play CS:GO fairly regularly and dedicatedly. At the moment i'm currently sinking hours into Fallout 4 and HL2 mod called Synergy (pretty much HL2 story co-op)</p>
+							<p>SteamID: jedikins PS Tag: Goose-god</p>	
+							<hr />
+							<i className="fa interests-icon fa-futbol-o"></i>
+							<h1>Sport</h1>
+							<p>As with games, I like watching almost all sports, particularly football, rugby and formula 1. I also play tennis in my spare time casually, and enjoy watching eSports. I appreciate the competetive nature and skill involved in sport which I think is mirrored in professional gaming teams</p>
+							<p>Fav teams: Spurs, Virtus.pro</p>	
+							<hr />
+			  			</div>
+			  		</ReactCSSTransitionGroup>
+		  		</div>
+			);
+ 		} else if (this.props.currentView==="BONUS") {
+		  	return (
+		  		<div className="col-xs-8 right-section">
+			  		<ReactCSSTransitionGroup transitionName="example" transitionEnterTimeout={500} transitionLeaveTimeout={300}>
+			  			<div className="information-display" key={this.props.currentView}>
+							<h1>This is my face</h1>
+							<img style={{width: 50 + "%"}} src="./build/images/myface.jpg" />
+							<hr />
+							<h1>This shows my determination, tenacity and the ability to go the distance...</h1>
+							<iframe style={{width: 100 + "%", height: 400 + "px"}} src="https://www.youtube.com/embed/2GtwpEYkDQg" frameborder="0" allowfullscreen></iframe>
+							<hr />
+			  			</div>
+			  		</ReactCSSTransitionGroup>
+		  		</div>
+			);
+ 		}
 	}
 });
 

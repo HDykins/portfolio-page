@@ -66,7 +66,7 @@ $gold: rgb(240,200,70);
 	.text-line {
 		font-size: 250px;
 		width: 300px;
-		height: 100px;
+		height: 120px;
 	}
 
 	.side-nav {
@@ -84,11 +84,11 @@ $gold: rgb(240,200,70);
 @media (min-width: 1200px) {
 	svg {
 		width: 300px;
-		height: 115px;
+		height: 120px;
 	}
 
 	.text-line {
-		font-size: 300px;
+		font-size: 250px;
 		width: 300px;
 		height: 100px;
 	}
@@ -109,8 +109,17 @@ body {
 	background-color: $off-black;
 	color: white;
 	text-align: center;
-	font-size: 25px;
-	font-family: 'Italianno', cursive;
+	font-size: 27px;
+	font-family: 'Sorts Mill Goudy', serif;
+	font-style: italic;
+}
+
+h1 {
+	color: $gold;
+}
+
+i {
+	color: white;
 }
 
 .header {
@@ -245,6 +254,7 @@ $stroke-step: 4%;
 	stroke-width: 15px;
   
 	animation: stroke-offset 2s linear infinite;
+	-moz-animation: stroke-offset 2s linear infinite;
   
 	@for $item from 1 through $max {
     $stroke-color: nth($colors, $item);
@@ -263,18 +273,80 @@ $stroke-step: 4%;
 	}
 }
 
+@-moz-keyframes stroke-offset {
+	50% {
+		stroke-dashoffset: $stroke-step * $max;  
+		stroke-dasharray: 0 $stroke-step * $max*2.5;
+	}
+}
+
+@-ms-keyframes stroke-offset {
+	50% {
+		stroke-dashoffset: $stroke-step * $max;  
+		stroke-dasharray: 0 $stroke-step * $max*2.5;
+	}
+}
+
+@-webkit-keyframes stroke-offset {
+	50% {
+		stroke-dashoffset: $stroke-step * $max;  
+		stroke-dasharray: 0 $stroke-step * $max*2.5;
+	}
+}
+
 .information-display {
-	font-family: 'Sorts Mill Goudy', serif;
 	background-color: $grey;
 	height: 560px;
 	overflow: scroll;
 	padding: 20px;
-	font-style: italic;
+	text-shadow: black 1px 1px;
 }
 
 .footer {
 	margin-top: 10px;
-	height: 54px;
 	background-color: $grey;
 	border-top: solid 1px rgb(100, 100, 100);
+	padding: 10px;
+	font-size: 24px;
+	text-shadow: black 1px 1px;
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+  display: none;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+  display: none;
+}
+
+.links {
+	color: $gold;
+}
+
+.links:hover {
+	-webkit-animation: color-change 1.5s infinite;
+	-moz-animation: color-change 1.5s infinite;
+	-o-animation: color-change 1.5s infinite;
+	-ms-animation: color-change 1.5s infinite;
+	animation: color-change 1.5s infinite;
+}
+
+.links:visited {
+	color: $gold;
+}
+
+.interests-icon {
+	font-size: 64px;
 }
