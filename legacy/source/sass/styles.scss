@@ -1,0 +1,352 @@
+$off-black: rgb(50, 50, 50);
+$grey: rgba(160, 160, 160, 0.1);
+$gold: rgb(240,200,70);
+
+
+@media (max-width: 800px) {
+
+	svg {
+		height: 130px;
+	}
+
+	.text-line {
+	  	font-size: 250px;
+	  	width: 300px;
+	  	height: 100px;
+	}
+
+	.left-section {
+		width:100%;
+	}
+
+	.right-section {
+		width:100%;
+	}
+
+	.side-nav {
+		height: 450px;
+	}
+
+	.section {
+		width: 90%;
+		height: 100px;
+		margin: 0 5%;
+		padding: 10px;
+	}
+}
+
+@media (max-width: 992px) and (min-width: 800px) {
+	svg {
+		height: 115px;
+	}
+
+	.text-line {
+		font-size: 250px;
+		width: 300px;
+		height: 100px;
+	}
+
+	.side-nav {
+		height: 560px;
+	}
+
+	.section {
+		width: 90%;
+		height: 135px;
+		margin: 0 5%;
+		padding: 10px;
+	}
+}
+
+@media (max-width: 1999px) and (min-width: 993px) {
+	svg {
+		height: 115px;
+	}
+
+	.text-line {
+		font-size: 250px;
+		width: 300px;
+		height: 120px;
+	}
+
+	.side-nav {
+		height: 560px;
+	}
+
+	.section {
+		width: 90%;
+		height: 135px;
+		margin: 0 5%;
+		padding: 10px;
+	}
+}
+
+@media (min-width: 1200px) {
+	svg {
+		width: 300px;
+		height: 120px;
+	}
+
+	.text-line {
+		font-size: 250px;
+		width: 300px;
+		height: 100px;
+	}
+
+	.side-nav {
+		height: 560px;
+	}
+
+	.section {
+		width: 90%;
+		height: 135px;
+		margin: 0 5%;
+		padding: 10px;
+	}
+}
+
+body {
+	background-color: $off-black;
+	color: white;
+	text-align: center;
+	font-size: 27px;
+	font-family: 'Sorts Mill Goudy', serif;
+	font-style: italic;
+}
+
+h1 {
+	color: $gold;
+}
+
+i {
+	color: white;
+}
+
+.header {
+	height: 70px;
+	background-color: $grey;
+	border-bottom: solid 1px rgb(100, 100, 100);
+}
+
+.external-site-button {
+	margin: 10px;
+	height: 40px;
+	width: 100px;
+	background-color: $off-black;
+/*	border: solid 1px yellow;*/
+	box-shadow: 5px 5px $gold, 10px 10px $off-black;
+	margin: 10px auto;
+	text-align: center;
+	font-size: 35px;
+	padding: 3px;
+	line-height: 0;
+}
+
+.external-site-button:hover {
+	@extend .external-site-button;
+	box-shadow: 5px 5px $off-black, 10px 10px $gold;
+	color: $gold;
+	-webkit-animation: color-change 1.5s infinite;
+	-moz-animation: color-change 1.5s infinite;
+	-o-animation: color-change 1.5s infinite;
+	-ms-animation: color-change 1.5s infinite;
+	animation: color-change 1.5s infinite;
+	-webkit-transition: all 0.5s infinite;
+	-moz-transition: all 0.5s infinite ;
+	-ms-transition: all 0.5s infinite ;
+	-o-transition: all 0.5s infinite ;
+	transition: all 0.5s ease-out ;
+}
+
+.external-site-button:visited, .external-site-button:link {
+	@extend .external-site-button;
+	-webkit-transition: all 0.5s infinite;
+	-moz-transition: all 0.5s infinite ;
+	-ms-transition: all 0.5s infinite ;
+	-o-transition: all 0.5s infinite ;
+	transition: all 0.5s ease-out
+}
+
+@-webkit-keyframes color-change {
+    0% { color: white; }
+    50% { color: $gold; }
+    100% { color: white; }
+}
+@-moz-keyframes color-change {
+    0% { color: white; }
+    50% { color: $gold; }
+    100% { color: white; }
+}
+@-ms-keyframes color-change {
+    0% { color: white; }
+    50% { color: $gold; }
+    100% { color: white; }
+}
+@-o-keyframes color-change {
+    0% { color: white; }
+    50% { color: $gold; }
+    100% { color: white; }
+}
+@keyframes color-change {
+    0% { color: white; }
+    50% { color: $gold; }
+    100% { color: white; }
+}
+
+
+.left-section, .right-section {
+	border-right: solid 1px rgb(100, 100, 100);
+	border-left: solid 1px rgb(100, 100, 100);
+	margin-top: 10px;
+}
+
+.side-nav {
+	background-color: $grey;
+}
+
+hr.line-break {
+    border: 0; 
+    height: 1px;
+    position: relative;
+	margin: 0;
+	margin-top: 15px;
+}
+
+hr.line-break:before {
+    top: -4px;
+    height: 1px;
+}
+
+
+hr.line-break:before, hr.line-break:after {
+	left: 0;
+    content: '';
+    position: absolute;
+    width: 100%;
+}
+
+hr.line-break, hr.line-break:before {
+    background: -moz-radial-gradient(center, ellipse cover, rgb(210, 210, 90) 0%, rgba(0,0,0,0) 75%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 75%, color-stop(0%,rgb(210, 210, 90)), color-stop(75%,rgba(0,0,0,0)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgb(210, 210, 90) 0%,rgba(0,0,0,0) 75%);
+    background: -o-radial-gradient(center, ellipse cover, rgb(210, 210, 90) 0%,rgba(0,0,0,0) 75%);
+    background: -ms-radial-gradient(center, ellipse cover, rgb(210, 210, 90) 0%,rgba(0,0,0,0) 75%);
+    background: radial-gradient(ellipse at center, $gold 50%,rgba(0,0,0,0) 75%);
+}
+
+$colors: $gold, yellow, yellow, yellow, yellow;
+
+.text-copy {
+font-weight: 100;
+	  fill: $gold;
+	  text-shadow: 1px 1px 0 $off-black, 2px 2px 0 rgb(40,40,40);
+	  width: 100px;
+	  height: 20px;
+}
+
+$max: 5;
+$stroke-step: 4%; 
+.text-copy:hover {
+	font-weight: 100;
+	stroke: $grey;
+	fill: none;
+	stroke-dasharray: $stroke-step $stroke-step * ($max - 1);
+	stroke-width: 15px;
+  
+	animation: stroke-offset 2s linear infinite;
+	-moz-animation: stroke-offset 2s linear infinite;
+  
+	@for $item from 1 through $max {
+    $stroke-color: nth($colors, $item);
+    
+	    &:nth-child(#{$item}) {
+	    	stroke: $stroke-color;
+	    	stroke-dashoffset: $stroke-step * $item;
+	    }
+ 	}
+}
+
+@keyframes stroke-offset {
+	50% {
+		stroke-dashoffset: $stroke-step * $max;  
+		stroke-dasharray: 0 $stroke-step * $max*2.5;
+	}
+}
+
+@-moz-keyframes stroke-offset {
+	50% {
+		stroke-dashoffset: $stroke-step * $max;  
+		stroke-dasharray: 0 $stroke-step * $max*2.5;
+	}
+}
+
+@-ms-keyframes stroke-offset {
+	50% {
+		stroke-dashoffset: $stroke-step * $max;  
+		stroke-dasharray: 0 $stroke-step * $max*2.5;
+	}
+}
+
+@-webkit-keyframes stroke-offset {
+	50% {
+		stroke-dashoffset: $stroke-step * $max;  
+		stroke-dasharray: 0 $stroke-step * $max*2.5;
+	}
+}
+
+.information-display {
+	background-color: $grey;
+	height: 560px;
+	overflow: scroll;
+	padding: 20px;
+	text-shadow: black 1px 1px;
+}
+
+.footer {
+	margin-top: 10px;
+	background-color: $grey;
+	border-top: solid 1px rgb(100, 100, 100);
+	padding: 10px;
+	font-size: 24px;
+	text-shadow: black 1px 1px;
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+  display: none;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+  display: none;
+}
+
+.links {
+	color: $gold;
+}
+
+.links:hover {
+	-webkit-animation: color-change 1.5s infinite;
+	-moz-animation: color-change 1.5s infinite;
+	-o-animation: color-change 1.5s infinite;
+	-ms-animation: color-change 1.5s infinite;
+	animation: color-change 1.5s infinite;
+}
+
+.links:visited {
+	color: $gold;
+}
+
+.interests-icon {
+	font-size: 64px;
+}
