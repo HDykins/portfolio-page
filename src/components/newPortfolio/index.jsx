@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: 'unset'
   },
   main: {
-    padding: '2rem 0'
+    padding: '2rem'
   },
   anchor: {
     display: 'block',

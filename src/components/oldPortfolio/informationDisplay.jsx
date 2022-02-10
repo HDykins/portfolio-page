@@ -2,6 +2,7 @@ import React, { Fragment, useContext } from "react"
 import ReactCSSTransitionGroup from "react-addons-css-transition-group"
 import { ViewContext } from "../viewContext"
 import cx from "classnames"
+import myface from "../../static/images/myface.jpg"
 
 const InformationDisplay = ({ currentSection }) => {
   const { currentView } = useContext(ViewContext);
@@ -87,7 +88,7 @@ const Interests = ({ currentSection }) =>
 const Bonus = ({ currentSection }) => 
   <Fragment>
     <h1>This is my face</h1>
-    <img style={{width: "50%"}} src="../src/static/images/myface.jpg" />
+    <img style={{width: "50%"}} src={myface} />
     <hr />
     <h1>This shows my determination, tenacity and the ability to go the distance...</h1>
     <iframe style={{width: "100%", height: "400px"}} src="https://www.youtube.com/embed/2GtwpEYkDQg" frameborder="0" allowfullscreen></iframe>

@@ -51,15 +51,15 @@ const sharedStyles = (theme) => ({
   papers: {
     zIndex: '5',
     border: '1px solid #ccc',
-    backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), ${paperBg}`,
+    backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(${paperBg})`,
     backgroundSize: 'cover',
     boxShadow: 'inset 0 0 30px rgba(0,0,0,0.1), 1px 1px 3px rgba(0,0,0,0.2)',
     position: 'relative',
     padding: '2rem',
-    margin: '0 1rem',
+    margin: '0',
     "&::before": {
       zIndex: '-1',
-      content: '',
+      content: "''",
       position: 'absolute',
       left: '0',
       top: '0',
@@ -69,13 +69,13 @@ const sharedStyles = (theme) => ({
       oTransform: 'rotate(0.5deg)',
       transform: 'rotateZ(0.5deg)',
       border: '1px solid #ccc',
-      backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), ${paperBg}`,
+      backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(${paperBg})`,
       backgroundSize: 'cover',
       boxShadow: 'inset 0 0 30px rgba(0,0,0,0.1), 1px 1px 3px rgba(0,0,0,0.2)'
     },
     "&::after": {
       zIndex: '-1',
-      content: '',
+      content: "''",
       position: 'absolute',
       left: '0',
       top: '0',
@@ -85,7 +85,7 @@ const sharedStyles = (theme) => ({
       oTransform: 'rotate(-0.5deg)',
       transform: 'rotateZ(-0.5deg)',
       border: '1px solid #ccc',
-      backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), ${paperBg}`,
+      backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(${paperBg})`,
       backgroundSize: 'cover',
       boxShadow: 'inset 0 0 30px rgba(0,0,0,0.1), 1px 1px 3px rgba(0,0,0,0.2)'
     },

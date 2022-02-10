@@ -8,11 +8,11 @@ import { ViewContext } from "../../viewContext";
 import sharedStyles from '../../sharedStyles';
 
 const useStyles = makeStyles(theme => ({
+  ...sharedStyles(theme),
   panelPadding: {
     padding: '2rem',
     margin: '0 1rem'
-  },
-  ...sharedStyles(theme)
+  }
 }));
 
 const Panel = ({ children }) => {

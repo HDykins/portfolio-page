@@ -14,8 +14,8 @@ const useStyles = makeStyles(theme => ({
     margin: "0 1rem"
   },
   sideNav: {
-    padding: "2rem 0",
-    height: "fit-content"
+    padding: "2rem 1rem",
+    height: "fit-content",
   },
   ...sharedStyles(theme)
 }));

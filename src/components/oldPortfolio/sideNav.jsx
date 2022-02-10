@@ -2,7 +2,7 @@ import React, { useContext } from "react"
 import { ViewContext } from "../viewContext"
 import cx from "classnames"
 
-const SideNav = ({ setCurrentTheme }) => {
+const SideNav = ({ setCurrentSection }) => {
   const { currentTheme } = useContext(ViewContext);
   const sideNavClass = cx("side-nav", currentTheme);
   return (
@@ -20,7 +20,7 @@ const SideNav = ({ setCurrentTheme }) => {
 						</text>
 				  	</symbol>
 				  
-					<g onClick={() => setCurrentView("ABOUT")} className="g-ants">
+					<g onClick={() => setCurrentSection("ABOUT")} className="g-ants">
 						<use xlinkHref="#about-svg-symbol"
 						  className="text-copy"></use>     
 						<use xlinkHref="#about-svg-symbol"
@@ -46,7 +46,7 @@ const SideNav = ({ setCurrentTheme }) => {
 						</text>
 				  	</symbol>
 				  
-					<g onClick={() => setCurrentView("PROJECTS")} className="g-ants">
+					<g onClick={() => setCurrentSection("PROJECTS")} className="g-ants">
 						<use xlinkHref="#projects-svg-symbol"
 						  className="text-copy"></use>     
 						<use xlinkHref="#projects-svg-symbol"
@@ -72,7 +72,7 @@ const SideNav = ({ setCurrentTheme }) => {
 						</text>
 				  	</symbol>
 				  
-					<g onClick={() => setCurrentView("INTERESTS")} className="g-ants">
+					<g onClick={() => setCurrentSection("INTERESTS")} className="g-ants">
 						<use xlinkHref="#interests-svg-symbol"
 						  className="text-copy"></use>     
 						<use xlinkHref="#interests-svg-symbol"
@@ -98,7 +98,7 @@ const SideNav = ({ setCurrentTheme }) => {
 						</text>
 				  	</symbol>
 				  
-					<g onClick={() => setCurrentView("BONUS")} className="g-ants">
+					<g onClick={() => setCurrentSection("BONUS")} className="g-ants">
 						<use xlinkHref="#bonus-svg-symbol"
 						  className="text-copy"></use>     
 						<use xlinkHref="#bonus-svg-symbol"

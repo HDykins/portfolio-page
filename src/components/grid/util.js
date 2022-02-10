@@ -1,4 +1,4 @@
-import styles from "flexboxgrid2"
+const styles = require("flexboxgrid2");
 import cx from "classnames"
 
 export function getClass(className) {

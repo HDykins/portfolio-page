@@ -9,13 +9,13 @@ import ViewChanger from '../../ViewChanger';
 import sharedStyles from '../../sharedStyles';
 
 const useStyles = makeStyles(theme => ({
+  ...sharedStyles(theme),
   navbar: {
     zIndex: 100,
     top: 0,
     padding: 0,
     height: '5rem'
   },
-  ...sharedStyles(theme),
   sticky: {
     position: 'sticky'
   }
@@ -24,10 +24,10 @@ const useStyles = makeStyles(theme => ({
 const SideNav = () => {
   const theme = useContext(ViewContext);
   const isDarkTheme = theme.currentTheme==="dark"
-  const { navbar, sticky, darkText, lightText, darkPanel } = useStyles();
+  const { navbar, sticky, darkText, lightText, darkPanel, papers } = useStyles();
 
   return (
-    <Grid container item className={isDarkTheme ? cx(navbar, darkPanel, sticky) : cx(navbar, 'papers', sticky)}>
+    <Grid container item className={isDarkTheme ? cx(navbar, darkPanel, sticky) : cx(papers, navbar, sticky)}>
       <Grid container item xs={2} align='center' alignItems='center' justify='center'>
         <ViewChanger/>
       </Grid>
