@@ -1,0 +1,33 @@
+{
+  "name": "portfolio-page",
+  "version": "0.0.1",
+  "description": "Portfolio page with React.js",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HDykins/portfolio-page.git"
+  },
+  "author": "Harry Dykins",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HDykins/portfolio-page/issues"
+  },
+  "homepage": "https://github.com/HDykins/portfolio-page",
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "gulp": "^3.8.11",
+    "gulp-html-minifier": "^0.1.6",
+    "reactify": "^1.0.0",
+    "vinyl-source-stream": "^1.0.0"
+  },
+  "dependencies": {
+    "gulp-sass": "^2.1.1",
+    "gulp-uglify": "^1.1.0",
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1",
+    "vinyl-buffer": "^1.0.0"
+  }
+}
